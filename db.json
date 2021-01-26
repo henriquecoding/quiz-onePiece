@@ -1,10 +1,10 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+    "bg": "../img/one-piece.jpg",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "",
         "title": "Como fazer um seletor por id via CSS?",
         "description": "Essa é pra aquecer",
         "answer": 2,
@@ -16,7 +16,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "",
         "title": "Como fazer um background gradiente com css?",
         "description": "Faz tempo em haha",
         "answer": 0,
