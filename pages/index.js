@@ -34,7 +34,10 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>One Piece - Quiz</title>
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="../img/one-piece-quiz.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
       </Head>
       <QuizContainer>
@@ -48,7 +51,7 @@ export default function Home() {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}>
-              <input 
+              <Input 
               onChange={function (infosDoEvento) {
                 setName(infosDoEvento.target.value);
               }}
