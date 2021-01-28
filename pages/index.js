@@ -34,12 +34,9 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Head>
+      <Head title={db.title} bg={db.bg} description={db.description}>
         <title>{db.title}</title>
         <meta property="og:image" content="../img/one-piece-quiz.jpg" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="720" />
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
       </Head>
       <QuizContainer>
