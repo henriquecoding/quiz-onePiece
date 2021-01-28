@@ -96,6 +96,7 @@
         "primary": "#F25A64",
         "secondary": "#36EBA5",
         "mainBg": "#232323",
+        "inputBg": "#FEDC5C",
         "contrastText": "#f2f2f2",
         "wrong": "#FF5722",
         "success": "#4CAF50"
