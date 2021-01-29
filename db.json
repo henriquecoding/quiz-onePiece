@@ -19,12 +19,12 @@
         "image": "../img/nakamas2.jpg",
         "title": "Quem é o médico(a)?",
         "description": "Haverá um dia que encontrará a cura de todas as doenças",
-        "answer": 1,
+        "answer": 3,
         "alternatives": [
           "Franky",
-          "Chopper",
+          "Ace",
           "Robin",
-          "Ace"
+          "Chopper"
         ]
       },
       {
@@ -67,7 +67,7 @@
         "image": "../img/shichibukais.jpg",
         "title": "Quais são os notórios piratas que se aliaram ao Governo Mundial",
         "description": "Os Sete Lordes do Mar da Realeza",
-        "answer": 0,
+        "answer": 3,
         "alternatives": [
           "Tobiroppo",
           "Yonkou",
@@ -79,7 +79,7 @@
         "image": "../img/tamatebako.jpg",
         "title": "Qual o tesouro que iniciou a nova era pirata",
         "description": "Um tesouro que está além da imaginação",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
           "Akuma no Mi",
           "Haki",
@@ -89,7 +89,8 @@
       }
     ],
     "external": [
-      ""
+      "https://typequiz.caducarvalho.vercel.app/",
+      "https://flow-quiz.garubieru.vercel.app/"
     ],
     "theme": {
       "colors": {
