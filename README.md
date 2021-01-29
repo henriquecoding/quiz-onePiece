@@ -3,7 +3,7 @@
 Seja bem vindo ao projeto do One Piece Quiz!!! Passos fundamentais:
 - Marque esse projeto com uma estrela e compartilhe com seus nakamas!
 
-![Capa do Projeto](/img/layout-quiz.png)
+![Capa do Projeto](./img/layout-quiz.png)
 
 ## Onde posso embarcar meus conhecimentos?
 
