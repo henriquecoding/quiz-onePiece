@@ -64,4 +64,15 @@ Widget.Topic = styled.a`
   }
 `;
 
+Widget.Image = styled.div`
+  position: relative;
+  .animation {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+`;
+
 export default Widget;

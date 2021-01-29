@@ -88,15 +88,32 @@ function QuestionWidget({
         </h3>
       </Widget.Header>
 
-      <img
-        alt="Descrição"
+      <Widget.Image>
+        <img
+        alt="Imagem descritiva da Questão"
         style={{
           width: '100%',
           height: '150px',
           objectFit: 'cover',
         }}
         src={question.image}
-      />
+        />
+        {isQuestionSubmited && (
+        <div className="animation">
+          <Lottie
+            options={{
+              loop: false,
+              autoplay: true,
+              animationData:
+              (isCorrect ? successAnimation : errorAnimation),
+              rendererSettings: {
+                preserveAspectRatio: 'xMidYMid meet',
+              },
+            }}
+          />
+        </div>
+        )}
+      </Widget.Image>
       <Widget.Content>
         <h2>
           {question.title}
@@ -114,7 +131,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 1 * 1000);
+            }, 1 * 2000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
