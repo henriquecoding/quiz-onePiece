@@ -8,9 +8,6 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
-import sucessAnimation from './animations/success.json';
-import errorAnimation from './animations/error.json';
-
 function ResultWidget({ results }) {
   return (
     <Widget>
@@ -20,7 +17,6 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          {router.push(`/quiz?name=${name}`)}
           Você acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
