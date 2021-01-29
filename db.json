@@ -4,7 +4,7 @@
     "description": "Teste seus conhecimentos nessa aventura pirata",
     "questions": [
       {
-        "image": "../img/nakamas.jpg",
+        "image": "../img/gif-onepiece/zoro.gif",
         "title": "Quem foi o primeiro companheiro de Luffy?",
         "description": "Um braço direito até o final da aventura",
         "answer": 2,
@@ -16,7 +16,7 @@
         ]
       },
       {
-        "image": "../img/nakamas2.jpg",
+        "image": "../img/gif-onepiece/nakamas.gif",
         "title": "Quem é o médico(a)?",
         "description": "Haverá um dia que encontrará a cura de todas as doenças",
         "answer": 3,
@@ -28,8 +28,8 @@
         ]
       },
       {
-        "image": "../img/merry.jpg",
-        "title": "Qual o primeiro navio da tripulação?",
+        "image": "../img/gif-onepiece/luffy-chorando.gif",
+        "title": "A morte inevitável de qual navio fez Luffy brigar com Usopp?",
         "description": "Um companheiro que estará sempre em nossos corações",
         "answer": 0,
         "alternatives": [
@@ -40,8 +40,8 @@
         ]
       },
       {
-        "image": "../img/irmaos-luffy.jpg",
-        "title": "Quais são os irmãos de Luffy",
+        "image": "../img/gif-onepiece/sabo&ace.gif",
+        "title": "Quais são os irmãos de Luffy?",
         "description": "Uma ligação que ultrapassas limites do sangue",
         "answer": 1,
         "alternatives": [
@@ -52,8 +52,8 @@
         ]
       },
       {
-        "image": "../img/roger.jpg",
-        "title": "Quem ficou conhecido como Rei dos Piratas",
+        "image": "../img/gif-onepiece/goldRoger.gif",
+        "title": "Quem ficou conhecido como Rei dos Piratas?",
         "description": "O homem que fazia o que ninguém achava possível",
         "answer": 0,
         "alternatives": [
@@ -64,8 +64,8 @@
         ]
       },
       {
-        "image": "../img/shichibukais.jpg",
-        "title": "Quais são os notórios piratas que se aliaram ao Governo Mundial",
+        "image": "../img/gif-onepiece/shichibukais.gif",
+        "title": "Quais são os notórios piratas que se aliaram ao Governo Mundial?",
         "description": "Os Sete Lordes do Mar da Realeza",
         "answer": 3,
         "alternatives": [
@@ -76,15 +76,51 @@
         ]
       },
       {
-        "image": "../img/tamatebako.jpg",
-        "title": "Qual o tesouro que iniciou a nova era pirata",
-        "description": "Um tesouro que está além da imaginação",
+        "image": "../img/gif-onepiece/impressionados.gif",
+        "title": "Qual o tesouro que iniciou a nova era pirata?",
+        "description": "Um tesouro que está além da imaginação!",
         "answer": 2,
         "alternatives": [
           "Akuma no Mi",
           "Haki",
           "One Piece",
           "Tamatebako"
+        ]
+      },
+      {
+        "image": "../img/gif-onepiece/shanks.gif",
+        "title": "Quem deu o chapéu de palha para Luffy?",
+        "description": "A chama que deu início a tudo",
+        "answer": 1,
+        "alternatives": [
+          "Garp",
+          "Shanks",
+          "Roger",
+          "Dragon"
+        ]
+      },
+      {
+        "image": "../img/gif-onepiece/borracha.gif",
+        "title": "Qual fruta dá o poder do Luffy?",
+        "description": "De alívio cômico para uma pura demonstração de genialidade",
+        "answer": 3,
+        "alternatives": [
+          "Ope Ope no Mi",
+          "Hito Hito no Mi",
+          "Mera Mera no Mi",
+          "Gomu Gomu no Mi"
+        ]
+      },
+      {
+        "image": "../img/gif-onepiece/lawcorta-luffy.gif",
+        "title": "Quem tem o poder de fazer isso?",
+        "description": "Ele tem hobbies subaquáticos",
+        "answer": 0,
+        "alternatives": [
+          "Trafalgar D. Water Law",
+          "Buggy",
+          "Dracule Mihawk",
+          "Marshall D. Teach"
         ]
       }
     ],

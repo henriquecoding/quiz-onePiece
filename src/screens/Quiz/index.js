@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useState, useContext } from 'react';
+import Lottie from 'react-lottie';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
@@ -7,6 +8,9 @@ import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
+
+import successAnimation from '../../screens/Quiz/animations/success.json';
+import errorAnimation from '../../screens/Quiz/animations/error.json';
 
 function ResultWidget({ results }) {
   return (
@@ -110,7 +114,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 1 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
