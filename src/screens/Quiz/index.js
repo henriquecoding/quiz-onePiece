@@ -15,10 +15,11 @@ import errorAnimation from '../../screens/Quiz/animations/error.json';
 
 function ResultWidget({ results }) {
   const countRightAns = results.filter((x) => x).length;
+  const router = useRouter()
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        <h1>Tela de Resultado:</h1>
       </Widget.Header>
 
       <Widget.Content>
@@ -31,6 +32,13 @@ function ResultWidget({ results }) {
             <p>{`QUESTÃO ${index + 1}: ${result === true ? 'Resposta Certa!' : 'Resposta Errada!'}`}</p>
           </Widget.Result>
         ))}
+
+        <form onSubmit={function (event) {
+          event.preventDefault()
+          router.push(`/`)
+        }}>
+          <Button as="button">Refazer o Quiz</Button>
+        </form>
       </Widget.Content>
     </Widget>
   );
