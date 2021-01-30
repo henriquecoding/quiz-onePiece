@@ -1,5 +1,6 @@
 {
     "bg": "../img/one-piece.jpg",
+    "layoutQuiz": "../img/layout-quiz.png",
     "title": "One Piece - Quiz",
     "description": "Teste seus conhecimentos nessa aventura pirata",
     "questions": [

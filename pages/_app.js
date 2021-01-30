@@ -45,13 +45,13 @@ export default function App({ Component, pageProps }) {
         <meta property="og:url" content="https://quiz-one-piece.henpassquesori.vercel.app/" />
         <meta property="og:title" content="One Piece - Quiz" />
         <meta property="og:description" content="Um quiz que testa seus conhecimentos em uma das melhores obras de animação atualmente e já a um bom tempo haha, foi criada na Imersão React v2 da Alura." />
-        <meta property="og:image" content="../img/one-piece-quiz.jpg" />
+        <meta property="og:image" content={db.layoutQuiz} />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://quiz-one-piece.henpassquesori.vercel.app/" />
         <meta property="twitter:title" content="One Piece - Quiz" />
         <meta property="twitter:description" content="Um quiz que testa seus conhecimentos em uma das melhores obras de animação atualmente e já a um bom tempo haha, foi criada na Imersão React v2 da Alura." />
-        <meta property="twitter:image" content="../img/one-piece-quiz.jpg" />
+        <meta property="twitter:image" content={db.layoutQuiz} />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
