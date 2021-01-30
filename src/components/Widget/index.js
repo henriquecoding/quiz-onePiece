@@ -75,4 +75,19 @@ Widget.Image = styled.div`
   }
 `;
 
+Widget.Result = styled.div`
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 2px 15px;
+  margin-bottom: 8px;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  display: flex;
+  &[data-correct="true"] {
+    background-color: ${({ theme }) => theme.colors.success};
+  }
+  & > *:first-child {
+    color: ${({ theme }) => `${theme.colors.contrastText}`};
+    font-size: 18px;
+  }
+`;
+
 export default Widget;

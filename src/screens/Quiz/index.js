@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useContext } from 'react';
+import { useRouter } from 'next/router';
 import Lottie from 'react-lottie';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
@@ -13,6 +14,7 @@ import successAnimation from '../../screens/Quiz/animations/success.json';
 import errorAnimation from '../../screens/Quiz/animations/error.json';
 
 function ResultWidget({ results }) {
+  const countRightAns = results.filter((x) => x).length;
   return (
     <Widget>
       <Widget.Header>
@@ -20,33 +22,15 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <p>
-          Você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
-        <ul>
-          {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              #
-              {index + 1}
-              {' '}
-              Resultado:
-              {result === true
-                ? 'Acertou'
-                : 'Errou'}
-            </li>
-          ))}
-        </ul>
+        <p>{ `Parabéns, você acertou ${countRightAns} ${countRightAns > 1 ? 'Questões' : 'Questão'}!` }</p>
+        {results.map((result, index) => (
+          <Widget.Result
+            key={`result__${result}`}
+            data-correct={result}
+          >
+            <p>{`QUESTÃO ${index + 1}: ${result === true ? 'Resposta Certa!' : 'Resposta Errada!'}`}</p>
+          </Widget.Result>
+        ))}
       </Widget.Content>
     </Widget>
   );
