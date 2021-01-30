@@ -23,7 +23,7 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <p>{ `Parabéns, você acertou ${countRightAns} ${countRightAns > 1 ? 'Questões' : 'Questão'}!` }</p>
+        <h2>{ `Marujo, você acertou ${countRightAns} ${countRightAns > 1 ? 'Questões' : 'Questão'}!` }</h2>
         {results.map((result, index) => (
           <Widget.Result
             key={`result__${result}`}
@@ -90,21 +90,7 @@ function QuestionWidget({
         }}
         src={question.image}
         />
-        {isQuestionSubmited && (
-        <div className="animation">
-          <Lottie
-            options={{
-              loop: false,
-              autoplay: true,
-              animationData:
-              (isCorrect ? successAnimation : errorAnimation),
-              rendererSettings: {
-                preserveAspectRatio: 'xMidYMid meet',
-              },
-            }}
-          />
-        </div>
-        )}
+        
       </Widget.Image>
       <Widget.Content>
         <h2>
@@ -153,11 +139,29 @@ function QuestionWidget({
           {/* <pre>
             {JSON.stringify(question, null, 4)}
           </pre> */}
-          <Button type="submit" disabled={!hasAlternativeSelected}>
-            Confirmar
+          <Button type="submit" disabled={!hasAlternativeSelected}> 
+          {!isQuestionSubmited && "Disparar"}
+          {isQuestionSubmited && (
+            <div className="animation">
+              <Lottie
+                height={65}
+                width={65}
+                options={{
+                  loop: false,
+                  autoplay: true,
+                  animationData:
+                  (isCorrect ? successAnimation : errorAnimation),
+                  rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid meet',
+                  },
+                }}
+              />
+            </div>
+            )}
+             
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect && <p>Boa marujo!</p>}
+          {isQuestionSubmited && !isCorrect && <p>Errou marujo!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>

@@ -8,13 +8,16 @@ const Widget = styled.div`
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
   }
+  h2 {
+    margin-bottom: 20px;
+  }
   p {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1;
   }

@@ -127,7 +127,8 @@
     ],
     "external": [
       "https://typequiz.caducarvalho.vercel.app/",
-      "https://flow-quiz.garubieru.vercel.app/"
+      "https://flow-quiz.garubieru.vercel.app/",
+      "https://ai-quiz.idcesares.vercel.app/"
     ],
     "theme": {
       "colors": {
