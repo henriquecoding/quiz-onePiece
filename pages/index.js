@@ -118,7 +118,7 @@ export default function Home() {
           animate="show"
         />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/henpassquesori" />
+      <GitHubCorner projectUrl="https://github.com/henriquecoding" />
     </QuizBackground>
   );
 }
